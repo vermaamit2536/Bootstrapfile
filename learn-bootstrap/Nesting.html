@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Nesting </title>
+    <style>
+        .container {
+            border: 4px solid brown;
+        }
+
+        .col {
+            border: 2px solid black;
+           
+        }
+
+        .row {
+            border: 6px solid darkblue;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .green {
+            background: green;
+        }
+
+        .orange {
+            background: orangered;
+        }
+
+        .grey {
+            background: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-6 green">
+            <h3>Go to page</h3>
+            <div class="row">
+                <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aut similique
+                    aliquam aliquid aspernatur delectus. Voluptatibus quis recusandae dolore minima eveniet libero
+                    dolorum ipsum velit debitis suscipit quia veritatis alias sint animi, error necessitatibus facere
+                    sunt nisi sequi id officiis!</div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-8 red">
+                            Hello
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

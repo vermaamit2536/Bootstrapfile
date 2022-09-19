@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 3px solid rebeccapurple;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="py-3 text-center">Bootstrap 4 form classes</h2>
+        <div class="row py-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" value="baba@gmail.com" class="form-control-plaintext" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control">
+                    <small class="form-text text-muted">
+                        your password must be 8-20 characters long
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Country</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">India</option>
+                        <option value="">Pakistan</option>
+                        <option value="">Nepal</option>
+                        <option value="">China</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Message</label>
+                    <textarea name="" class="form-group"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>File Upload</label>
+                    <input type="file" class="form-control-file">
+                </div>
+                <div class="form-group">
+                    <label>Amount</label>
+                    <input type="range" class="form-control-range">
+                </div>
+
+                <div class="form-group">
+                    <label>Hobbies</label>
+
+                    <div class="form-check">">
+                        <input type="checkbox" class="form-check-input" id="musicCheck">
+                        <label for="" class="form-check-label">Music</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="sportchek">
+                        <label for="musicCheck" class="form-check-label">sports</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="bookcheck">
+                        <label for="bookcheck" class="form-check-label">Book</label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

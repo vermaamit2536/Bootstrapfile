@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Reordering classes</title>
+    <style>
+        .container{
+            border: 4px solid brown;
+        }
+        .col{
+            border: 2px solid black;
+        }
+        .red{
+            background: red;
+        }
+        .green{
+            background:green;
+        }
+        .orange{
+            background: orangered;
+        }
+        .grey{
+            background: grey;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 order-md-1 order-sm-3 red "> col 1</div>
+            <div class="col-md-3 order-md-3 order-sm-2 green"> col 2</div>
+            <div class="col-md-4 order-md-2 order-sm-1 orange">col 3</div>
+        </div>
+    </div>
+    
+</body>
+</html>

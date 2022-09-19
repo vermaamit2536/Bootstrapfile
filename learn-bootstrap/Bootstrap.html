@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap Responsive</title>
+    <style>
+        #header {
+            color: #fff;
+            background: rgba(105, 105, 156);
+        }
+
+        .section {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .section h2.section-head {
+            color: #000;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section h2.section-head::after {
+            background: rgba(105, 105, 156);
+            content: "";
+            display: block;
+            width: 100px;
+            height: 3px;
+            margin: 20px auto;
+        }
+
+
+        #logo {
+            font-size: 1.7rem;
+            margin-top: 7px;
+        }
+
+        #menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li {
+            display: inline-block;
+        }
+
+        #menu li a {
+            color: white;
+            padding: 15px 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        #menu li a:hover {
+            background: rgb(77, 77, 150);
+        }
+
+        #banner {
+            background: url(css/img/employ.jpg) no-repeat 0 0;
+            height: 100%;
+            background-size: cover;
+        }
+
+        .banner-title {
+            padding-top: 5rem;
+        }
+
+        .banner-title h1 {
+            background: rgb(101, 190, 116);
+            display: inline-block;
+            padding: 10px;
+            margin: 0;
+            color: #fff;
+        }
+
+        .banner-title p.lead {
+            color: #fff;
+            background: rgb(77, 77, 150);
+            padding: 10px;
+        }
+
+        .service-box {
+            text-align: center;
+        }
+
+        .service-box i.fa {
+            color: rgb(77, 77, 150);
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        #testimonials {
+            color: #fff;
+            background: url(css/img/boot.jpg) no-repeat 0 0;
+            background-size: cover;
+            padding: 50px 0;
+            position: relative;
+        }
+
+        #testimonials::before {
+            background: rgb(77, 77, 150, 0.2);
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #testimonials img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .news-post img {
+            width: 300px;
+            height: 200px;
+            margin-bottom: 10px;
+            padding: 1rem;
+        }
+
+        .news-post h3 {
+            font-size: 1.35rem;
+        }
+
+        .news-post h3 a {
+            color: rgb(77, 77, 150, );
+        }
+
+        .post-date {
+            font-size: 13px;
+            margin-bottom: 13px;
+            margin-bottom: 2px;
+        }
+
+        #footer-sidebar {
+            color: #fff;
+            background: rgb(77, 77, 150);
+            padding: 10px 0;
+        }
+
+        .footer-widget h4::after {
+            content: "";
+            background-color: #fff;
+            display: block;
+            width: 50px;
+            height: 2px;
+            margin: 5px 0;
+        }
+
+        .footer-widget a {
+            color: #fff;
+        }
+
+        .latest-news {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .latest-news li {
+            margin-bottom: 3px;
+        }
+
+        #footer {
+            color: #fff;
+            background: rgb(101, 190, 116);
+            padding: 10px 0;
+        }
+
+        #social-icons {
+            list-style: none;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #social-icons li {
+            display: inline-block;
+            padding-left: 5px;
+        }
+
+        #social-icons li a {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        @media (max-width: 992px) {
+        .news-post{
+            margin-bottom: 30px;
+        }
+            
+        }
+        @media (max-width: 768px){
+            #logo{
+                text-align: center;
+                margin: 10px 0;
+            }
+            #menu{
+                text-align: center;
+            }
+            .banner-title{
+                padding-top: 0;
+            }
+            .section{
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+            .testimomial{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .service-box{
+                margin-bottom: 30px;
+            }
+            .news-post{
+                margin-bottom: 30px;
+            }
+            .footer-widget{
+                margin-bottom: 20px;
+            }
+            #footer-widget{
+                text-align: center;
+            }
+            #social-icons{
+                margin-top: 10px;
+            }
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 id="logo">Company Name</h1>
+                </div>
+                <div class="col-md-8">
+                    <ul id="menu" class="float-md-right">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="banner" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-8 col-lg-6">
+                    <div class="banner-title">
+                        <h1 class="title">Some Heading Goes Here</h1>
+                        <p class="lead">Lorem ipsum dolor amet consecthi prossmc fpgkesak peortion . Eum deserunt libero
+                            quod ex cumque non eius unde esse tenetur
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head">Some Heading Goes Here</h2>
+            </div>
+            <div class=" col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-anchor"></i>
+                    <h3>Some Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit quisquam qui eos
+                        neque accusantium natus asperiores odio quidem illum.</p>
+                </div>
+            </div>
+            <div class=" col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-bar-chart"></i>
+                    <h3>Some Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit quisquam qui eos
+                        neque accusantium natus asperiores odio quidem illum.</p>
+                </div>
+            </div>
+            <div class=" col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-diamond"></i>
+                    <h3>Some Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit quisquam qui eos
+                        neque accusantium natus asperiores odio quidem illum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="testimonials" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-head">testimonials</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae fugit dignissimos fugiat
+                            cumque.</p>
+                        <img src="css/img/sachin.jpg" alt="">
+                        <div class="author">Sachin</div>
+                        <div class="author-company">Cricketer</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae fugit dignissimos fugiat
+                            cumque.</p>
+                        <img src="css/img/virat.jpg" alt="">
+                        <div class="author">Virat Kohli</div>
+                        <div class="author-company">Cricketer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="news" class="container section">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head">Recent News</h2>
+            </div>
+            <div class=" col-md-6 col-lg-3">
+                <div class="news-post">
+                    <img src="css/img/emp.jpg" width="300px" height="200px" alt="">
+                    <h3><a href="">News Heading Here</a></h3>
+                    <div class="post-date">April 30, 2020</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quas.</p>
+                    <a href="" class="readmore">Read More</a>
+                </div>
+            </div>
+
+            <div class=" col-md-6 col-lg-3">
+                <div class="news-post">
+                    <img src="css/img/employ.jpg" alt="">
+                    <h3><a href="">News Heading Here</a></h3>
+                    <div class="post-date">April 30, 2020</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quas.</p>
+                    <a href="" class="readmore">Read More</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="news-post">
+                    <img src="css/img/employ 2.jpg" alt="">
+                    <h3><a href="">News Heading Here</a></h3>
+                    <div class="post-date">April 30, 2020</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quas.</p>
+                    <a href="" class="readmore">Read More</a>
+                </div>
+            </div>
+
+            <div class=" col-md-6 col-lg-3">
+                <div class="news-post">
+                    <img src="css/img/emp.jpg" alt="">
+                    <h3><a href="">News Heading Here</a></h3>
+                    <div class="post-date">April 30, 2020</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quas.</p>
+                    <a href="" class="readmore">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-widget">
+                        <h4>About Company</h4>
+                        <p>Lorem ipsum dolor sit amet consthisporaionTempore amet distinctio
+                            minus, omnis eum quo animi aut quibusdam recusandae!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eius cum suscipit laboriosam
+                            neque quas.</p>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-4">
+                    <div class="footer-widget">
+                        <h4>Latest News</h4>
+                        <ul class="latest-news">
+                            <li><a href="">Lorem ipsum dolor sit amet consectetur</a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet consectetur </a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet consectet</a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet consectetur </a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet consectetur </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-widget">
+                        <h4>Company Address</h4>
+                        <address>
+                            <b>Yahoo Baba, Inc</b>
+                            555 Hill Road, Ambala cantt <br>
+                            HARYANA, INDIA 133001 <br>
+                            p : (123) 456-7890
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">Copyright@2020 company name.</div>
+                <div class="col-md-6">
+                    <ul id="social-icons" class="float-md-right">
+                        <li><a href="" class="fa fa-facebook-square"></a></li>
+                        <li><a href="" class="fa fa-twitter"></a></li>
+                        <li><a href="" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
